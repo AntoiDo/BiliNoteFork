@@ -12,7 +12,7 @@ BiliNote is an AI video note generation tool. It extracts content from video lin
 ```bash
 cd backend
 pip install -r requirements.txt
-python main.py                    # Starts on 0.0.0.0:8483
+python main.py                    # Starts on 0.0.0.0:8000
 ```
 
 ### Frontend (React 19 + Vite + TypeScript)
@@ -61,7 +61,7 @@ cd BillNote_frontend && pnpm tauri build
 
 ## Key Configuration
 
-- **Ports**: Backend 8483, Frontend dev 3015, Docker maps 3015→80
+- **Ports**: Backend 8000, Frontend dev 3015, Docker maps 3015→80
 - **Environment**: Root `.env` (copy from `.env.example`). LLM API keys are configured through the UI, not env vars.
 - **Database**: SQLite at `backend/app/db/bili_note.db`, auto-initialized on first run
 - **FFmpeg**: Required system dependency for video/audio processing

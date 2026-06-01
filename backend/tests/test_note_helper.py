@@ -14,7 +14,7 @@ spec.loader.exec_module(note_helper)
 
 class TestNoteHelper(unittest.TestCase):
     def test_prepend_source_link_adds_header_at_top(self):
-        source_url = "https://www.bilibili.com/video/BV1xx411c7mD"
+        source_url = "https://www.abilibili.com/video/BV1xx411c7mD"
         markdown = "## 标题\n\n内容"
 
         result = note_helper.prepend_source_link(markdown, source_url)

@@ -241,7 +241,7 @@ async def deploy_status():
         ffmpeg_ok = False
     
     return R.success(data={
-        "backend": {"status": "running", "port": int(os.getenv("BACKEND_PORT", 8483))},
+        "backend": {"status": "running", "port": int(os.getenv("BACKEND_PORT", 8000))},
         "cuda": cuda_info,
         "whisper": {"model_size": model_size, "transcriber_type": transcriber_type},
         "ffmpeg": {"available": ffmpeg_ok},
