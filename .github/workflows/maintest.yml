@@ -27,6 +27,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install pytest
+        sudo apt update
         sudo apt install -y ffmpeg
 
     - name: Run tests
